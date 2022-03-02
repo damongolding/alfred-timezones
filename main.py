@@ -90,7 +90,7 @@ def get_times(time: DateTime, time_format: str, submitted_timezone: str) -> dict
         time_to_return = f"{time.in_timezone(timezone[0]).format(time_format, locale='en')} {timezone[1]}"
 
         times_to_return['items'].append(
-            {"title": time_to_return, "arg": time_to_return, 'icon': {'path': '~/GIT/pendulum/images/clock.png'}})
+            {"title": time_to_return, "arg": time_to_return, 'icon': {'path': 'images/clock.png'}})
 
     return times_to_return
 
