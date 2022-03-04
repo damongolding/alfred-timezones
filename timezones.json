@@ -1,0 +1,2378 @@
+[
+    {
+        "timezone": "NZ",
+        "abbreveation": "NZDT"
+    },
+    {
+        "timezone": "Asia/Pontianak",
+        "abbreveation": "WIB"
+    },
+    {
+        "timezone": "Asia/Choibalsan",
+        "abbreveation": "+08"
+    },
+    {
+        "timezone": "Europe/Belfast",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Africa/Tunis",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Pacific/Guadalcanal",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "Africa/Asmara",
+        "abbreveation": "EAT"
+    },
+    {
+        "timezone": "America/Kentucky/Louisville",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "America/Cancun",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "America/St_Barthelemy",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Ojinaga",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Etc/GMT-3",
+        "abbreveation": "+03"
+    },
+    {
+        "timezone": "Africa/Nouakchott",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Atlantic/Faeroe",
+        "abbreveation": "WET"
+    },
+    {
+        "timezone": "America/Yakutat",
+        "abbreveation": "AKST"
+    },
+    {
+        "timezone": "America/Sitka",
+        "abbreveation": "AKST"
+    },
+    {
+        "timezone": "America/St_Johns",
+        "abbreveation": "NST"
+    },
+    {
+        "timezone": "Asia/Rangoon",
+        "abbreveation": "+0630"
+    },
+    {
+        "timezone": "GMT+0",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "America/Curacao",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Africa/Lome",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "UTC",
+        "abbreveation": "UTC"
+    },
+    {
+        "timezone": "America/Creston",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Asia/Kuala_Lumpur",
+        "abbreveation": "+08"
+    },
+    {
+        "timezone": "Pacific/Palau",
+        "abbreveation": "+09"
+    },
+    {
+        "timezone": "America/Bahia",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Asia/Baghdad",
+        "abbreveation": "+03"
+    },
+    {
+        "timezone": "Atlantic/Madeira",
+        "abbreveation": "WET"
+    },
+    {
+        "timezone": "America/Indiana/Winamac",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Indian/Antananarivo",
+        "abbreveation": "EAT"
+    },
+    {
+        "timezone": "Asia/Urumqi",
+        "abbreveation": "+06"
+    },
+    {
+        "timezone": "Antarctica/Macquarie",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "Mexico/BajaSur",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Asia/Yangon",
+        "abbreveation": "+0630"
+    },
+    {
+        "timezone": "Europe/Sarajevo",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "America/Grand_Turk",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "America/Argentina/ComodRivadavia",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Pacific/Niue",
+        "abbreveation": "-11"
+    },
+    {
+        "timezone": "Asia/Ulaanbaatar",
+        "abbreveation": "+08"
+    },
+    {
+        "timezone": "America/Detroit",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Asia/Kuching",
+        "abbreveation": "+08"
+    },
+    {
+        "timezone": "Africa/Libreville",
+        "abbreveation": "WAT"
+    },
+    {
+        "timezone": "Europe/Zaporozhye",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Canada/Saskatchewan",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Etc/GMT+4",
+        "abbreveation": "-04"
+    },
+    {
+        "timezone": "Asia/Saigon",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "Pacific/Samoa",
+        "abbreveation": "SST"
+    },
+    {
+        "timezone": "Japan",
+        "abbreveation": "JST"
+    },
+    {
+        "timezone": "America/Rio_Branco",
+        "abbreveation": "-05"
+    },
+    {
+        "timezone": "America/Merida",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Asia/Tashkent",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "America/Montserrat",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Noronha",
+        "abbreveation": "-02"
+    },
+    {
+        "timezone": "Asia/Novosibirsk",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "America/Lower_Princes",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Chicago",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Europe/Guernsey",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Europe/Sofia",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Atlantic/Azores",
+        "abbreveation": "-01"
+    },
+    {
+        "timezone": "Asia/Dacca",
+        "abbreveation": "+06"
+    },
+    {
+        "timezone": "Australia/Perth",
+        "abbreveation": "AWST"
+    },
+    {
+        "timezone": "Europe/Stockholm",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "America/Scoresbysund",
+        "abbreveation": "-01"
+    },
+    {
+        "timezone": "Europe/Budapest",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "America/Argentina/Cordoba",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Asia/Atyrau",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "Asia/Colombo",
+        "abbreveation": "+0530"
+    },
+    {
+        "timezone": "Europe/Rome",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Etc/GMT-11",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "Asia/Muscat",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "Pacific/Bougainville",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "Pacific/Pitcairn",
+        "abbreveation": "-08"
+    },
+    {
+        "timezone": "Europe/Gibraltar",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Canada/Newfoundland",
+        "abbreveation": "NST"
+    },
+    {
+        "timezone": "Pacific/Yap",
+        "abbreveation": "+10"
+    },
+    {
+        "timezone": "America/Porto_Acre",
+        "abbreveation": "-05"
+    },
+    {
+        "timezone": "Etc/GMT+8",
+        "abbreveation": "-08"
+    },
+    {
+        "timezone": "Australia/Victoria",
+        "abbreveation": "AEDT"
+    },
+    {
+        "timezone": "America/La_Paz",
+        "abbreveation": "-04"
+    },
+    {
+        "timezone": "America/Montreal",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "America/Anguilla",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Etc/GMT-2",
+        "abbreveation": "+02"
+    },
+    {
+        "timezone": "America/Costa_Rica",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Asia/Dushanbe",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "Europe/Samara",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "Africa/Dar_es_Salaam",
+        "abbreveation": "EAT"
+    },
+    {
+        "timezone": "Europe/Volgograd",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "Indian/Comoro",
+        "abbreveation": "EAT"
+    },
+    {
+        "timezone": "America/Los_Angeles",
+        "abbreveation": "PST"
+    },
+    {
+        "timezone": "Africa/Conakry",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Australia/Sydney",
+        "abbreveation": "AEDT"
+    },
+    {
+        "timezone": "America/St_Kitts",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Kentucky/Monticello",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Australia/Brisbane",
+        "abbreveation": "AEST"
+    },
+    {
+        "timezone": "HST",
+        "abbreveation": "HST"
+    },
+    {
+        "timezone": "Asia/Macau",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Pacific/Gambier",
+        "abbreveation": "-09"
+    },
+    {
+        "timezone": "America/Godthab",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Brazil/DeNoronha",
+        "abbreveation": "-02"
+    },
+    {
+        "timezone": "Asia/Pyongyang",
+        "abbreveation": "KST"
+    },
+    {
+        "timezone": "Atlantic/Canary",
+        "abbreveation": "WET"
+    },
+    {
+        "timezone": "America/Marigot",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Managua",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Europe/Astrakhan",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "Etc/GMT+7",
+        "abbreveation": "-07"
+    },
+    {
+        "timezone": "Atlantic/Stanley",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Europe/Jersey",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Etc/UCT",
+        "abbreveation": "UTC"
+    },
+    {
+        "timezone": "Asia/Beirut",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Europe/Berlin",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "America/Nome",
+        "abbreveation": "AKST"
+    },
+    {
+        "timezone": "EST",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "America/Kralendijk",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Etc/GMT-4",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "Australia/LHI",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "EST5EDT",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Pacific/Truk",
+        "abbreveation": "+10"
+    },
+    {
+        "timezone": "Pacific/Funafuti",
+        "abbreveation": "+12"
+    },
+    {
+        "timezone": "Greenwich",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "America/Atikokan",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "America/Martinique",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Australia/Currie",
+        "abbreveation": "AEDT"
+    },
+    {
+        "timezone": "Europe/Simferopol",
+        "abbreveation": "MSK"
+    },
+    {
+        "timezone": "Europe/Moscow",
+        "abbreveation": "MSK"
+    },
+    {
+        "timezone": "Africa/Tripoli",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "America/Iqaluit",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "America/Havana",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Asia/Tomsk",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "Jamaica",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "America/Dominica",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Asia/Ashgabat",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "Asia/Famagusta",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "America/Ensenada",
+        "abbreveation": "PST"
+    },
+    {
+        "timezone": "Africa/Ndjamena",
+        "abbreveation": "WAT"
+    },
+    {
+        "timezone": "America/Indiana/Indianapolis",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Etc/GMT+9",
+        "abbreveation": "-09"
+    },
+    {
+        "timezone": "America/Monterrey",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Pacific/Nauru",
+        "abbreveation": "+12"
+    },
+    {
+        "timezone": "Asia/Hovd",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "Europe/Copenhagen",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Africa/Bamako",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "America/Sao_Paulo",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Atlantic/Jan_Mayen",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Asia/Qatar",
+        "abbreveation": "+03"
+    },
+    {
+        "timezone": "Asia/Gaza",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "America/Danmarkshavn",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Europe/Oslo",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "MST7MDT",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Asia/Hebron",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Europe/Malta",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "America/El_Salvador",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "America/Denver",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Asia/Nicosia",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Africa/Gaborone",
+        "abbreveation": "CAT"
+    },
+    {
+        "timezone": "Canada/Eastern",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Etc/GMT-7",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "Etc/GMT-9",
+        "abbreveation": "+09"
+    },
+    {
+        "timezone": "Antarctica/Davis",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "Europe/Madrid",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Etc/GMT-5",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "America/Guyana",
+        "abbreveation": "-04"
+    },
+    {
+        "timezone": "Australia/Broken_Hill",
+        "abbreveation": "ACDT"
+    },
+    {
+        "timezone": "America/Indiana/Petersburg",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Asia/Istanbul",
+        "abbreveation": "+03"
+    },
+    {
+        "timezone": "America/Argentina/Tucuman",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Europe/Tiraspol",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "US/Hawaii",
+        "abbreveation": "HST"
+    },
+    {
+        "timezone": "Pacific/Kwajalein",
+        "abbreveation": "+12"
+    },
+    {
+        "timezone": "Europe/Istanbul",
+        "abbreveation": "+03"
+    },
+    {
+        "timezone": "Asia/Aden",
+        "abbreveation": "+03"
+    },
+    {
+        "timezone": "Africa/Kinshasa",
+        "abbreveation": "WAT"
+    },
+    {
+        "timezone": "MST",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Etc/GMT+0",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Mexico/General",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Africa/Freetown",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Pacific/Wallis",
+        "abbreveation": "+12"
+    },
+    {
+        "timezone": "America/Port-au-Prince",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Etc/GMT+2",
+        "abbreveation": "-02"
+    },
+    {
+        "timezone": "Kwajalein",
+        "abbreveation": "+12"
+    },
+    {
+        "timezone": "Africa/Windhoek",
+        "abbreveation": "CAT"
+    },
+    {
+        "timezone": "Asia/Kolkata",
+        "abbreveation": "IST"
+    },
+    {
+        "timezone": "Africa/Asmera",
+        "abbreveation": "EAT"
+    },
+    {
+        "timezone": "Hongkong",
+        "abbreveation": "HKT"
+    },
+    {
+        "timezone": "Asia/Damascus",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Europe/Riga",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "GMT0",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "America/Menominee",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Etc/Greenwich",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Europe/Lisbon",
+        "abbreveation": "WET"
+    },
+    {
+        "timezone": "America/Porto_Velho",
+        "abbreveation": "-04"
+    },
+    {
+        "timezone": "EET",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "America/Adak",
+        "abbreveation": "HST"
+    },
+    {
+        "timezone": "Africa/Lubumbashi",
+        "abbreveation": "CAT"
+    },
+    {
+        "timezone": "Chile/EasterIsland",
+        "abbreveation": "-05"
+    },
+    {
+        "timezone": "Etc/GMT+12",
+        "abbreveation": "-12"
+    },
+    {
+        "timezone": "Etc/UTC",
+        "abbreveation": "UTC"
+    },
+    {
+        "timezone": "Pacific/Rarotonga",
+        "abbreveation": "-10"
+    },
+    {
+        "timezone": "Asia/Kashgar",
+        "abbreveation": "+06"
+    },
+    {
+        "timezone": "Egypt",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Europe/Vilnius",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Asia/Srednekolymsk",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "PST8PDT",
+        "abbreveation": "PST"
+    },
+    {
+        "timezone": "America/Argentina/San_Luis",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "America/Thunder_Bay",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "America/Argentina/La_Rioja",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Europe/Zagreb",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Europe/Isle_of_Man",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Australia/Tasmania",
+        "abbreveation": "AEDT"
+    },
+    {
+        "timezone": "ROC",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Asia/Singapore",
+        "abbreveation": "+08"
+    },
+    {
+        "timezone": "Antarctica/DumontDUrville",
+        "abbreveation": "+10"
+    },
+    {
+        "timezone": "America/Metlakatla",
+        "abbreveation": "AKST"
+    },
+    {
+        "timezone": "America/Louisville",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "US/Pacific",
+        "abbreveation": "PST"
+    },
+    {
+        "timezone": "Pacific/Pago_Pago",
+        "abbreveation": "SST"
+    },
+    {
+        "timezone": "Australia/Melbourne",
+        "abbreveation": "AEDT"
+    },
+    {
+        "timezone": "WET",
+        "abbreveation": "WET"
+    },
+    {
+        "timezone": "Europe/Ljubljana",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Antarctica/McMurdo",
+        "abbreveation": "NZDT"
+    },
+    {
+        "timezone": "Asia/Anadyr",
+        "abbreveation": "+12"
+    },
+    {
+        "timezone": "Pacific/Chuuk",
+        "abbreveation": "+10"
+    },
+    {
+        "timezone": "America/Dawson_Creek",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Africa/Juba",
+        "abbreveation": "EAT"
+    },
+    {
+        "timezone": "Pacific/Kiritimati",
+        "abbreveation": "+14"
+    },
+    {
+        "timezone": "Etc/GMT-12",
+        "abbreveation": "+12"
+    },
+    {
+        "timezone": "UCT",
+        "abbreveation": "UTC"
+    },
+    {
+        "timezone": "America/Argentina/Rio_Gallegos",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Africa/Addis_Ababa",
+        "abbreveation": "EAT"
+    },
+    {
+        "timezone": "Europe/Helsinki",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Etc/GMT0",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Australia/Lindeman",
+        "abbreveation": "AEST"
+    },
+    {
+        "timezone": "America/Anchorage",
+        "abbreveation": "AKST"
+    },
+    {
+        "timezone": "Pacific/Johnston",
+        "abbreveation": "HST"
+    },
+    {
+        "timezone": "Atlantic/Reykjavik",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "America/Lima",
+        "abbreveation": "-05"
+    },
+    {
+        "timezone": "Asia/Makassar",
+        "abbreveation": "WITA"
+    },
+    {
+        "timezone": "America/Nuuk",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "America/Toronto",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "America/Indianapolis",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Asia/Oral",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "Asia/Novokuznetsk",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "Australia/NSW",
+        "abbreveation": "AEDT"
+    },
+    {
+        "timezone": "Asia/Sakhalin",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "Asia/Macao",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Africa/Johannesburg",
+        "abbreveation": "SAST"
+    },
+    {
+        "timezone": "Asia/Jakarta",
+        "abbreveation": "WIB"
+    },
+    {
+        "timezone": "Africa/Harare",
+        "abbreveation": "CAT"
+    },
+    {
+        "timezone": "Pacific/Honolulu",
+        "abbreveation": "HST"
+    },
+    {
+        "timezone": "Asia/Thimbu",
+        "abbreveation": "+06"
+    },
+    {
+        "timezone": "America/Halifax",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Buenos_Aires",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "US/Eastern",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "America/Boa_Vista",
+        "abbreveation": "-04"
+    },
+    {
+        "timezone": "Etc/GMT+5",
+        "abbreveation": "-05"
+    },
+    {
+        "timezone": "US/Indiana-Starke",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Europe/Tallinn",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Asia/Tbilisi",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "Asia/Dili",
+        "abbreveation": "+09"
+    },
+    {
+        "timezone": "Asia/Almaty",
+        "abbreveation": "+06"
+    },
+    {
+        "timezone": "Asia/Riyadh",
+        "abbreveation": "+03"
+    },
+    {
+        "timezone": "Africa/Lusaka",
+        "abbreveation": "CAT"
+    },
+    {
+        "timezone": "Asia/Yerevan",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "MET",
+        "abbreveation": "MET"
+    },
+    {
+        "timezone": "Europe/Paris",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "America/Tegucigalpa",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "America/Yellowknife",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Etc/GMT-14",
+        "abbreveation": "+14"
+    },
+    {
+        "timezone": "Pacific/Ponape",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "America/Santa_Isabel",
+        "abbreveation": "PST"
+    },
+    {
+        "timezone": "America/St_Lucia",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Canada/Mountain",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "America/Tortola",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Asia/Ashkhabad",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "Africa/Luanda",
+        "abbreveation": "WAT"
+    },
+    {
+        "timezone": "America/Guadeloupe",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Europe/Kirov",
+        "abbreveation": "+03"
+    },
+    {
+        "timezone": "Europe/Vaduz",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Africa/Cairo",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Indian/Mauritius",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "CET",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Europe/Skopje",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "America/Regina",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Asia/Calcutta",
+        "abbreveation": "IST"
+    },
+    {
+        "timezone": "Asia/Amman",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Africa/Ceuta",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Asia/Aqtau",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "Pacific/Midway",
+        "abbreveation": "SST"
+    },
+    {
+        "timezone": "Pacific/Wake",
+        "abbreveation": "+12"
+    },
+    {
+        "timezone": "Africa/Sao_Tome",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Etc/GMT+6",
+        "abbreveation": "-06"
+    },
+    {
+        "timezone": "Etc/Universal",
+        "abbreveation": "UTC"
+    },
+    {
+        "timezone": "Asia/Jerusalem",
+        "abbreveation": "IST"
+    },
+    {
+        "timezone": "America/Chihuahua",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Africa/Abidjan",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Etc/GMT+11",
+        "abbreveation": "-11"
+    },
+    {
+        "timezone": "PRC",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Atlantic/South_Georgia",
+        "abbreveation": "-02"
+    },
+    {
+        "timezone": "Etc/GMT-1",
+        "abbreveation": "+01"
+    },
+    {
+        "timezone": "America/Santiago",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "America/Argentina/Mendoza",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Asia/Phnom_Penh",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "Asia/Ho_Chi_Minh",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "America/Glace_Bay",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Africa/Mogadishu",
+        "abbreveation": "EAT"
+    },
+    {
+        "timezone": "Africa/Brazzaville",
+        "abbreveation": "WAT"
+    },
+    {
+        "timezone": "GB-Eire",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Europe/Monaco",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Africa/Bujumbura",
+        "abbreveation": "CAT"
+    },
+    {
+        "timezone": "America/Thule",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Fort_Wayne",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Asia/Krasnoyarsk",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "Africa/Maputo",
+        "abbreveation": "CAT"
+    },
+    {
+        "timezone": "America/Araguaina",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Europe/San_Marino",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "America/Indiana/Tell_City",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Indian/Mayotte",
+        "abbreveation": "EAT"
+    },
+    {
+        "timezone": "Europe/Zurich",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "America/Belem",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Pacific/Fiji",
+        "abbreveation": "+12"
+    },
+    {
+        "timezone": "America/Tijuana",
+        "abbreveation": "PST"
+    },
+    {
+        "timezone": "America/Grenada",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Asia/Omsk",
+        "abbreveation": "+06"
+    },
+    {
+        "timezone": "America/Maceio",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Asia/Yakutsk",
+        "abbreveation": "+09"
+    },
+    {
+        "timezone": "Asia/Vladivostok",
+        "abbreveation": "+10"
+    },
+    {
+        "timezone": "Etc/GMT-8",
+        "abbreveation": "+08"
+    },
+    {
+        "timezone": "Pacific/Auckland",
+        "abbreveation": "NZDT"
+    },
+    {
+        "timezone": "Atlantic/Cape_Verde",
+        "abbreveation": "-01"
+    },
+    {
+        "timezone": "Africa/Mbabane",
+        "abbreveation": "SAST"
+    },
+    {
+        "timezone": "Australia/Queensland",
+        "abbreveation": "AEST"
+    },
+    {
+        "timezone": "Africa/Malabo",
+        "abbreveation": "WAT"
+    },
+    {
+        "timezone": "Indian/Chagos",
+        "abbreveation": "+06"
+    },
+    {
+        "timezone": "America/Nassau",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Africa/Nairobi",
+        "abbreveation": "EAT"
+    },
+    {
+        "timezone": "Africa/Lagos",
+        "abbreveation": "WAT"
+    },
+    {
+        "timezone": "America/Rainy_River",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "America/Knox_IN",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "America/Argentina/Ushuaia",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "US/Arizona",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Asia/Dhaka",
+        "abbreveation": "+06"
+    },
+    {
+        "timezone": "America/Rosario",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Asia/Yekaterinburg",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "Africa/Monrovia",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Europe/Bratislava",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "America/Panama",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Etc/GMT+3",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "US/East-Indiana",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Africa/Porto-Novo",
+        "abbreveation": "WAT"
+    },
+    {
+        "timezone": "Asia/Jayapura",
+        "abbreveation": "WIT"
+    },
+    {
+        "timezone": "Antarctica/Rothera",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Asia/Karachi",
+        "abbreveation": "PKT"
+    },
+    {
+        "timezone": "Asia/Harbin",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "US/Samoa",
+        "abbreveation": "SST"
+    },
+    {
+        "timezone": "Pacific/Galapagos",
+        "abbreveation": "-06"
+    },
+    {
+        "timezone": "Etc/GMT-13",
+        "abbreveation": "+13"
+    },
+    {
+        "timezone": "Eire",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "CST6CDT",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "US/Michigan",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Africa/Djibouti",
+        "abbreveation": "EAT"
+    },
+    {
+        "timezone": "Europe/Ulyanovsk",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "Asia/Aqtobe",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "America/Antigua",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Mazatlan",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Etc/GMT+1",
+        "abbreveation": "-01"
+    },
+    {
+        "timezone": "Indian/Christmas",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "Australia/Canberra",
+        "abbreveation": "AEDT"
+    },
+    {
+        "timezone": "America/Jujuy",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "America/North_Dakota/Center",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "America/Argentina/Buenos_Aires",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "America/Indiana/Marengo",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Europe/Chisinau",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Asia/Taipei",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Europe/Dublin",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Africa/Dakar",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Europe/Warsaw",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Pacific/Pohnpei",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "America/Cayenne",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Asia/Chita",
+        "abbreveation": "+09"
+    },
+    {
+        "timezone": "Africa/Bissau",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Asia/Tel_Aviv",
+        "abbreveation": "IST"
+    },
+    {
+        "timezone": "Asia/Dubai",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "America/Shiprock",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "America/Manaus",
+        "abbreveation": "-04"
+    },
+    {
+        "timezone": "Europe/Tirane",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Asia/Chungking",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Canada/Atlantic",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Antarctica/South_Pole",
+        "abbreveation": "NZDT"
+    },
+    {
+        "timezone": "Africa/Kigali",
+        "abbreveation": "CAT"
+    },
+    {
+        "timezone": "America/Cayman",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Asia/Kabul",
+        "abbreveation": "+0430"
+    },
+    {
+        "timezone": "Asia/Tehran",
+        "abbreveation": "+0330"
+    },
+    {
+        "timezone": "America/Nipigon",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "GMT-0",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Atlantic/Faroe",
+        "abbreveation": "WET"
+    },
+    {
+        "timezone": "Asia/Magadan",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "America/Argentina/San_Juan",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "America/Cordoba",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Asia/Baku",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "Pacific/Saipan",
+        "abbreveation": "ChST"
+    },
+    {
+        "timezone": "America/Fortaleza",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Asia/Hong_Kong",
+        "abbreveation": "HKT"
+    },
+    {
+        "timezone": "Factory",
+        "abbreveation": "-00"
+    },
+    {
+        "timezone": "Europe/Minsk",
+        "abbreveation": "+03"
+    },
+    {
+        "timezone": "Atlantic/St_Helena",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "America/Belize",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Asia/Ulan_Bator",
+        "abbreveation": "+08"
+    },
+    {
+        "timezone": "US/Mountain",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Australia/Hobart",
+        "abbreveation": "AEDT"
+    },
+    {
+        "timezone": "Etc/GMT-6",
+        "abbreveation": "+06"
+    },
+    {
+        "timezone": "ROK",
+        "abbreveation": "KST"
+    },
+    {
+        "timezone": "Europe/Belgrade",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Israel",
+        "abbreveation": "IST"
+    },
+    {
+        "timezone": "Africa/Douala",
+        "abbreveation": "WAT"
+    },
+    {
+        "timezone": "America/Punta_Arenas",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Africa/Bangui",
+        "abbreveation": "WAT"
+    },
+    {
+        "timezone": "US/Aleutian",
+        "abbreveation": "HST"
+    },
+    {
+        "timezone": "Chile/Continental",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "NZ-CHAT",
+        "abbreveation": "+1345"
+    },
+    {
+        "timezone": "Pacific/Easter",
+        "abbreveation": "-05"
+    },
+    {
+        "timezone": "America/Hermosillo",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Australia/Adelaide",
+        "abbreveation": "ACDT"
+    },
+    {
+        "timezone": "America/New_York",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "America/Matamoros",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "America/Eirunepe",
+        "abbreveation": "-05"
+    },
+    {
+        "timezone": "Asia/Irkutsk",
+        "abbreveation": "+08"
+    },
+    {
+        "timezone": "America/Winnipeg",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Europe/Nicosia",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Asia/Samarkand",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "America/Whitehorse",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "America/Cuiaba",
+        "abbreveation": "-04"
+    },
+    {
+        "timezone": "America/Moncton",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Africa/El_Aaiun",
+        "abbreveation": "+01"
+    },
+    {
+        "timezone": "Europe/Brussels",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Zulu",
+        "abbreveation": "UTC"
+    },
+    {
+        "timezone": "Pacific/Marquesas",
+        "abbreveation": "-0930"
+    },
+    {
+        "timezone": "America/Blanc-Sablon",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Miquelon",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Europe/Podgorica",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Europe/Prague",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Africa/Banjul",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "America/Asuncion",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Europe/Andorra",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Cuba",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Turkey",
+        "abbreveation": "+03"
+    },
+    {
+        "timezone": "America/Santarem",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Europe/Vienna",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Asia/Ust-Nera",
+        "abbreveation": "+10"
+    },
+    {
+        "timezone": "America/St_Vincent",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Etc/GMT-0",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Antarctica/Palmer",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Libya",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Pacific/Guam",
+        "abbreveation": "ChST"
+    },
+    {
+        "timezone": "Africa/Blantyre",
+        "abbreveation": "CAT"
+    },
+    {
+        "timezone": "Africa/Ouagadougou",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Asia/Qyzylorda",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "Asia/Tokyo",
+        "abbreveation": "JST"
+    },
+    {
+        "timezone": "Indian/Cocos",
+        "abbreveation": "+0630"
+    },
+    {
+        "timezone": "America/Indiana/Knox",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Indian/Kerguelen",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "Asia/Bishkek",
+        "abbreveation": "+06"
+    },
+    {
+        "timezone": "America/Jamaica",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Africa/Timbuktu",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Pacific/Tongatapu",
+        "abbreveation": "+13"
+    },
+    {
+        "timezone": "America/Edmonton",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "America/North_Dakota/New_Salem",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "America/Pangnirtung",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Europe/Amsterdam",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Pacific/Efate",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "Arctic/Longyearbyen",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "W-SU",
+        "abbreveation": "MSK"
+    },
+    {
+        "timezone": "Indian/Mahe",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "America/Resolute",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Iran",
+        "abbreveation": "+0330"
+    },
+    {
+        "timezone": "Asia/Kuwait",
+        "abbreveation": "+03"
+    },
+    {
+        "timezone": "America/Guayaquil",
+        "abbreveation": "-05"
+    },
+    {
+        "timezone": "Australia/Darwin",
+        "abbreveation": "ACST"
+    },
+    {
+        "timezone": "Pacific/Enderbury",
+        "abbreveation": "+13"
+    },
+    {
+        "timezone": "America/Boise",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "America/Indiana/Vevay",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Canada/Yukon",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Navajo",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "America/Mexico_City",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "America/Fort_Nelson",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Asia/Kathmandu",
+        "abbreveation": "+0545"
+    },
+    {
+        "timezone": "Africa/Khartoum",
+        "abbreveation": "CAT"
+    },
+    {
+        "timezone": "America/Caracas",
+        "abbreveation": "-04"
+    },
+    {
+        "timezone": "Australia/West",
+        "abbreveation": "AWST"
+    },
+    {
+        "timezone": "Antarctica/Troll",
+        "abbreveation": "+00"
+    },
+    {
+        "timezone": "Australia/ACT",
+        "abbreveation": "AEDT"
+    },
+    {
+        "timezone": "Europe/Busingen",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Pacific/Apia",
+        "abbreveation": "+14"
+    },
+    {
+        "timezone": "Africa/Casablanca",
+        "abbreveation": "+01"
+    },
+    {
+        "timezone": "Asia/Bangkok",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "Asia/Barnaul",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "America/Bogota",
+        "abbreveation": "-05"
+    },
+    {
+        "timezone": "America/Indiana/Vincennes",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Pacific/Chatham",
+        "abbreveation": "+1345"
+    },
+    {
+        "timezone": "US/Alaska",
+        "abbreveation": "AKST"
+    },
+    {
+        "timezone": "Atlantic/Bermuda",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Rankin_Inlet",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "America/Argentina/Salta",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Antarctica/Syowa",
+        "abbreveation": "+03"
+    },
+    {
+        "timezone": "America/Inuvik",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Europe/Kaliningrad",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Europe/London",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "America/Paramaribo",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Asia/Brunei",
+        "abbreveation": "+08"
+    },
+    {
+        "timezone": "America/Campo_Grande",
+        "abbreveation": "-04"
+    },
+    {
+        "timezone": "Australia/South",
+        "abbreveation": "ACDT"
+    },
+    {
+        "timezone": "Brazil/West",
+        "abbreveation": "-04"
+    },
+    {
+        "timezone": "Africa/Kampala",
+        "abbreveation": "EAT"
+    },
+    {
+        "timezone": "Pacific/Tarawa",
+        "abbreveation": "+12"
+    },
+    {
+        "timezone": "America/Bahia_Banderas",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "America/Catamarca",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Pacific/Tahiti",
+        "abbreveation": "-10"
+    },
+    {
+        "timezone": "Asia/Thimphu",
+        "abbreveation": "+06"
+    },
+    {
+        "timezone": "Asia/Shanghai",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Antarctica/Mawson",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "Pacific/Kosrae",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "America/Montevideo",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Europe/Athens",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Australia/Eucla",
+        "abbreveation": "+0845"
+    },
+    {
+        "timezone": "Australia/North",
+        "abbreveation": "ACST"
+    },
+    {
+        "timezone": "Europe/Mariehamn",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Pacific/Port_Moresby",
+        "abbreveation": "+10"
+    },
+    {
+        "timezone": "Canada/Central",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "America/Swift_Current",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "America/St_Thomas",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "Europe/Saratov",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "Poland",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "America/Puerto_Rico",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Juneau",
+        "abbreveation": "AKST"
+    },
+    {
+        "timezone": "Asia/Katmandu",
+        "abbreveation": "+0545"
+    },
+    {
+        "timezone": "Europe/Vatican",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "Portugal",
+        "abbreveation": "WET"
+    },
+    {
+        "timezone": "Asia/Kamchatka",
+        "abbreveation": "+12"
+    },
+    {
+        "timezone": "Pacific/Noumea",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "Iceland",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "America/Argentina/Catamarca",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "America/North_Dakota/Beulah",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Pacific/Fakaofo",
+        "abbreveation": "+13"
+    },
+    {
+        "timezone": "America/Barbados",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Aruba",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Vancouver",
+        "abbreveation": "PST"
+    },
+    {
+        "timezone": "Universal",
+        "abbreveation": "UTC"
+    },
+    {
+        "timezone": "Africa/Niamey",
+        "abbreveation": "WAT"
+    },
+    {
+        "timezone": "Antarctica/Casey",
+        "abbreveation": "+08"
+    },
+    {
+        "timezone": "America/Virgin",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Goose_Bay",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "GMT",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "America/Coral_Harbour",
+        "abbreveation": "EST"
+    },
+    {
+        "timezone": "Africa/Maseru",
+        "abbreveation": "SAST"
+    },
+    {
+        "timezone": "Africa/Accra",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Europe/Luxembourg",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "America/Cambridge_Bay",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "America/Santo_Domingo",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Atka",
+        "abbreveation": "HST"
+    },
+    {
+        "timezone": "Brazil/Acre",
+        "abbreveation": "-05"
+    },
+    {
+        "timezone": "America/Guatemala",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Africa/Algiers",
+        "abbreveation": "CET"
+    },
+    {
+        "timezone": "America/Recife",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "America/Port_of_Spain",
+        "abbreveation": "AST"
+    },
+    {
+        "timezone": "America/Dawson",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Indian/Maldives",
+        "abbreveation": "+05"
+    },
+    {
+        "timezone": "Asia/Qostanay",
+        "abbreveation": "+06"
+    },
+    {
+        "timezone": "Asia/Chongqing",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Pacific/Majuro",
+        "abbreveation": "+12"
+    },
+    {
+        "timezone": "GB",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Asia/Khandyga",
+        "abbreveation": "+09"
+    },
+    {
+        "timezone": "Indian/Reunion",
+        "abbreveation": "+04"
+    },
+    {
+        "timezone": "Asia/Bahrain",
+        "abbreveation": "+03"
+    },
+    {
+        "timezone": "Mexico/BajaNorte",
+        "abbreveation": "PST"
+    },
+    {
+        "timezone": "America/Phoenix",
+        "abbreveation": "MST"
+    },
+    {
+        "timezone": "Asia/Vientiane",
+        "abbreveation": "+07"
+    },
+    {
+        "timezone": "Australia/Lord_Howe",
+        "abbreveation": "+11"
+    },
+    {
+        "timezone": "US/Central",
+        "abbreveation": "CST"
+    },
+    {
+        "timezone": "Brazil/East",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Antarctica/Vostok",
+        "abbreveation": "+06"
+    },
+    {
+        "timezone": "Asia/Seoul",
+        "abbreveation": "KST"
+    },
+    {
+        "timezone": "Etc/GMT-10",
+        "abbreveation": "+10"
+    },
+    {
+        "timezone": "Europe/Uzhgorod",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Asia/Ujung_Pandang",
+        "abbreveation": "WITA"
+    },
+    {
+        "timezone": "America/Argentina/Jujuy",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Etc/GMT",
+        "abbreveation": "GMT"
+    },
+    {
+        "timezone": "Australia/Yancowinna",
+        "abbreveation": "ACDT"
+    },
+    {
+        "timezone": "Europe/Kiev",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Pacific/Norfolk",
+        "abbreveation": "+12"
+    },
+    {
+        "timezone": "America/Mendoza",
+        "abbreveation": "-03"
+    },
+    {
+        "timezone": "Canada/Pacific",
+        "abbreveation": "PST"
+    },
+    {
+        "timezone": "Asia/Manila",
+        "abbreveation": "PST"
+    },
+    {
+        "timezone": "Etc/GMT+10",
+        "abbreveation": "-10"
+    },
+    {
+        "timezone": "Europe/Bucharest",
+        "abbreveation": "EET"
+    },
+    {
+        "timezone": "Singapore",
+        "abbreveation": "+08"
+    },
+    {
+        "timezone": "Etc/Zulu",
+        "abbreveation": "UTC"
+    }
+]

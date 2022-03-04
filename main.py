@@ -4,118 +4,156 @@ import sys
 import json
 import re
 from re import Match
-
-timezones = [
-    ("Europe/London", "GMT"),
-    # ("Etc/GMT", "UTC"),
-    ("America/Los_Angeles", "PST"),
-    ("America/New_York", "EST"),
-    ("America/Chicago", "CST"),
-    ("America/Denver", "MST"),
-]
-
-PATTERN_12 = r"(0?[0-9]|1[0-9]|2[0-3]):([0-5][0-9])+(am|pm)+\s([a-zA-Z]+)"
-PATTERN_24 = r"(0?[0-9]|1[0-9]|2[0-3]):([0-5][0-9])+\s([a-zA-Z]+)"
+import os
 
 
-def is_12_hour_format(input: str) -> Match[str] | None:
-    pattern = re.compile(PATTERN_12)
-    return re.match(pattern, input)
+class TimeZones:
 
+    PATTERN_12 = r"(0?[0-9]|1[0-9]|2[0-3]):([0-5][0-9])+(am|pm)+\s([a-zA-Z]+)"
+    PATTERN_24 = r"(0?[0-9]|1[0-9]|2[0-3]):([0-5][0-9])+\s([a-zA-Z]+)"
 
-def is_24_hour_format(input: str) -> Match[str] | None:
-    pattern = re.compile(PATTERN_24)
-    return re.match(pattern, input)
+    def __init__(self, time_argument: str):
 
+        self.time_argument = time_argument
 
-def get_regex_groups(input: str, pattern: str) -> tuple[str]:
-    pattern = re.compile(pattern)
-    matches = re.match(pattern, input)
-    groups = matches.groups()
-    return groups
+        # time format check
+        if self.is_12_hour_format(self.time_argument):
+            self.time_format = 12
 
+        elif self.is_24_hour_format(self.time_argument):
+            self.time_format = 24
 
-def display_24_hour_times(groups: tuple) -> dict:
-    hour = int(groups[0])
-    minute = int(groups[1])
-    submitted_timezone = groups[2]
+        else:
+            TimeZones.incorrect_time_format()
 
-    year = pendulum.now().year
-    month = pendulum.now().month
-    day = pendulum.now().day
+        #  if we are running from Alfred, use the correct path
+        file_path = "./tz/" if os.getenv("alfred_version") else "./"
 
-    timezone: tuple = list(filter(lambda x: x[1].lower() ==
-                           submitted_timezone.lower(), timezones))[0]
+        with open(file_path + "preferences.json") as f:
+            self.preferences = json.load(f)
 
-    time = pendulum.datetime(year=year, month=month,
-                             day=day, hour=hour, minute=minute, tz=timezone[0])
+        with open(file_path + "timezones.json") as f:
+            self.timezones = json.load(f)
 
-    return get_times(time=time, time_format="24", submitted_timezone=submitted_timezone)
+    def is_12_hour_format(self, input: str) -> Match[str] | None:
+        pattern = re.compile(self.PATTERN_12)
+        return re.match(pattern, input)
 
+    def is_24_hour_format(self, input: str) -> Match[str] | None:
+        pattern = re.compile(self.PATTERN_24)
+        return re.match(pattern, input)
 
-def display_12_hour_times(groups: tuple) -> dict:
-    hour = int(groups[0])
-    minute = int(groups[1])
-    am_pm = groups[2]
-    submitted_timezone = groups[3]
+    def get_regex_groups(self) -> tuple[str]:
+        pattern = re.compile(
+            self.PATTERN_12 if self.time_format == 12 else self.PATTERN_24)
+        matches = re.match(pattern, self.time_argument)
+        groups = matches.groups()
+        return groups
 
-    year = pendulum.now().year
-    month = pendulum.now().month
-    day = pendulum.now().day
+    def display_24_hour_times(self, groups: tuple) -> dict | None:
+        hour = int(groups[0])
+        minute = int(groups[1])
+        submitted_timezone = groups[2]
 
-    if am_pm == 'am' and hour == 12:
-        hour = 00
-    elif am_pm == 'pm' and hour != 12:
-        hour = hour + 12
+        year = pendulum.now().year
+        month = pendulum.now().month
+        day = pendulum.now().day
 
-    #  filter array of tuples to only include timezones that match the submitted timezone
-    timezone: tuple = list(filter(lambda x: x[1].lower() ==
-                           submitted_timezone.lower(), timezones))[0]
+        try:
+            timezone: dict | None = next(filter(lambda tz: tz['abbreveation'].upper()
+                                                == submitted_timezone.upper(), self.timezones), None)
+            time = pendulum.datetime(year=year, month=month,
+                                     day=day, hour=hour, minute=minute, tz=timezone['timezone'])
+        except (IndexError, TypeError):
+            TimeZones.unknown_timezone(submitted_timezone)
 
-    time = pendulum.datetime(year=year, month=month,
-                             day=day, hour=hour, minute=minute, tz=timezone[0])
+        return self.get_times(time=time, submitted_timezone=submitted_timezone)
 
-    return get_times(time=time, time_format="12", submitted_timezone=submitted_timezone)
+    def display_12_hour_times(self, groups: tuple):
+        hour = int(groups[0])
+        minute = int(groups[1])
+        am_pm = groups[2]
+        submitted_timezone = groups[3]
 
+        year = pendulum.now().year
+        month = pendulum.now().month
+        day = pendulum.now().day
 
-def get_times(time: DateTime, time_format: str, submitted_timezone: str) -> dict:
+        if am_pm == 'am' and hour == 12:
+            hour = 00
+        elif am_pm == 'pm' and hour != 12:
+            hour = hour + 12
 
-    time_format = "h:mmA" if time_format == "12" else "HH:mm"
-    times_to_return = {'items': []}
+        try:
+            timezone: dict = next(filter(lambda tz: tz['abbreveation'].lower()
+                                         == submitted_timezone.lower(), self.timezones), None)
+            time = pendulum.datetime(year=year, month=month,
+                                     day=day, hour=hour, minute=minute, tz=timezone['timezone'])
+        except (IndexError, TypeError):
+            TimeZones.unknown_timezone(submitted_timezone)
 
-    for timezone in timezones:
-        if timezone[1].lower() == submitted_timezone.lower():
-            continue
+        return self.get_times(time=time, submitted_timezone=submitted_timezone)
 
-        time_to_return = f"{time.in_timezone(timezone[0]).format(time_format, locale='en')} {timezone[1]}"
+    def get_times(self, time: DateTime, submitted_timezone: str) -> dict:
 
-        times_to_return['items'].append(
-            {"title": time_to_return, "arg": time_to_return, 'icon': {'path': 'images/clock.png'}})
+        # which timezone does the user want
+        time_format = "h:mmA" if self.time_format == 12 else "HH:mm"
+        # store timezones already created
+        created_times = set()
+        # store timezones to be returned
+        times_to_return = []
 
-    return times_to_return
+        for preference in self.preferences['timezones_to_display']:
+            # if requested timezone is in available timezones skip
+            if preference.upper() not in self.preferences["available_timezones"]:
+                continue
 
+            # if the timezone is the same as the user's submitted timezone, skip it
+            elif preference.upper() == submitted_timezone.upper():
+                continue
 
-def main():
+            # if the timezone is already created, skip it
+            elif preference.upper() in created_times:
+                continue
 
-    if len(sys.argv) != 2:
+            timezone: dict = next(filter(
+                lambda tz: tz['abbreveation'].upper() == preference.upper(), self.timezones), None)
+
+            time_to_return = f"{time.in_timezone(timezone['timezone']).format(time_format, locale='en')} {timezone['abbreveation']}"
+            created_times.add(timezone['abbreveation'].upper())
+            times_to_return.append(
+                {"title": time_to_return, "arg": time_to_return, 'icon': {'path': 'images/clock.png'}})
+
+        return {'items': list(times_to_return)}
+
+    def display_times(self):
+        if self.time_format == None:
+            return TimeZones.incorrect_time_format()
+
+        groups = self.get_regex_groups()
+        times = self.display_12_hour_times(
+            groups) if self.time_format == 12 else self.display_24_hour_times(groups)
+        print(json.dumps(times, indent=4, ensure_ascii=False))
         sys.exit(0)
 
-    time_argument = sys.argv[1]
-
-    if is_12_hour_format(time_argument):
-        groups = get_regex_groups(time_argument, PATTERN_12)
-        times = display_12_hour_times(groups)
-        print(json.dumps(times, indent=4, ensure_ascii=False))
-
-    elif is_24_hour_format(time_argument):
-        groups = get_regex_groups(time_argument, PATTERN_24)
-        times = display_24_hour_times(groups)
-        print(json.dumps(times, indent=4, ensure_ascii=False))
-
-    else:
+    @staticmethod
+    def incorrect_time_format() -> str:
         print(json.dumps(
-            {'items': [{'title': "Incorrect format", "suntitle": "e.g. 10:34am gmt"}]}, indent=4))
+            {'items': [{'title': "Incorrect time format", "subtitle": "example: 10:34am gmt or 18:30 pst"}]}, indent=4))
+        sys.exit(0)
+
+    @staticmethod
+    def unknown_timezone(timezone: str) -> str:
+        print(json.dumps(
+            {'items': [{'title': "Unknown timezone", "subtitle": f"{timezone} is not a known timezone"}]}, indent=4))
+        sys.exit(0)
 
 
 if __name__ == "__main__":
-    main()
+
+    if len(sys.argv) != 2:
+        TimeZones.incorrect_time_format()
+
+    timezone = TimeZones(time_argument=sys.argv[1])
+
+    timezone.display_times()
