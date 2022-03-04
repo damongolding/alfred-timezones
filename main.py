@@ -149,10 +149,26 @@ class TimeZones:
         sys.exit(0)
 
 
+def list_all_timezones():
+    #  if we are running from Alfred, use the correct path
+    file_path = "./tz/" if os.getenv("alfred_version") else "./"
+
+    with open(file_path + "./preferences.json") as p:
+        timezones = json.load(p)
+
+    outout = map(
+        lambda tz: {'title': tz}, timezones['available_timezones'])
+    print(json.dumps({'items': list(outout)}, indent=4))
+    sys.exit(0)
+
+
 if __name__ == "__main__":
 
     if len(sys.argv) != 2:
         TimeZones.incorrect_time_format()
+
+    if sys.argv[1] == "list":
+        list_all_timezones()
 
     timezone = TimeZones(time_argument=sys.argv[1])
 
