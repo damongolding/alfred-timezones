@@ -35,22 +35,22 @@ class TimeZones:
         with open(file_path + "timezones.json") as f:
             self.timezones = json.load(f)
 
-    def is_12_hour_format(self, input: str) -> Match[str] | None:
+    def is_12_hour_format(self, input: str):
         pattern = re.compile(self.PATTERN_12)
         return re.match(pattern, input)
 
-    def is_24_hour_format(self, input: str) -> Match[str] | None:
+    def is_24_hour_format(self, input: str):
         pattern = re.compile(self.PATTERN_24)
         return re.match(pattern, input)
 
-    def get_regex_groups(self) -> tuple[str]:
+    def get_regex_groups(self):
         pattern = re.compile(
             self.PATTERN_12 if self.time_format == 12 else self.PATTERN_24)
         matches = re.match(pattern, self.time_argument)
         groups = matches.groups()
         return groups
 
-    def display_24_hour_times(self, groups: tuple) -> dict | None:
+    def display_24_hour_times(self, groups: tuple):
         hour = int(groups[0])
         minute = int(groups[1])
         submitted_timezone = groups[2]
