@@ -4,10 +4,13 @@
 extern crate serde_derive;
 extern crate serde;
 extern crate serde_json;
+use serde::Deserialize;
 use serde_json::json;
 
 use regex::Regex;
 use std::env;
+use std::fs::File;
+use std::path::Path;
 
 use chrono::{Datelike, TimeZone, Utc};
 use chrono_tz::America::Cancun;
@@ -97,7 +100,7 @@ fn list_all_timezones(all_timezones: [&str; 34]) {
     println!("{}", payload);
 }
 
-fn display_12_hour_times(time_arg: &str, user_prefs: Vec<&str>) {
+fn display_12_hour_times(time_arg: &str, user_prefs: Vec<String>) {
     let current_time = Utc::now();
     let re = Regex::new(r"(0?[0-9]|1[0-9]|2[0-3]):([0-5][0-9])+(am|pm)+\s([a-zA-Z]+)").unwrap();
     let regex_groups = re.captures(time_arg).unwrap();
@@ -139,7 +142,7 @@ fn display_12_hour_times(time_arg: &str, user_prefs: Vec<&str>) {
     let mut output = AlfredItems { items: Vec::new() };
     for pref in user_prefs {
         let time_to_add = time
-            .with_timezone(time_to_use(pref).1)
+            .with_timezone(time_to_use(&pref).1)
             .format("%l:%M%P %Z")
             .to_string();
 
@@ -152,7 +155,7 @@ fn display_12_hour_times(time_arg: &str, user_prefs: Vec<&str>) {
     println!("{}", serde_json::to_string(&output).unwrap());
 }
 
-fn display_24_hour_times(time_arg: &str, user_prefs: Vec<&str>) {
+fn display_24_hour_times(time_arg: &str, user_prefs: Vec<String>) {
     let current_time = Utc::now();
     let re = Regex::new(r"(0?[0-9]|1[0-9]|2[0-3]):([0-5][0-9])+\s([a-zA-Z]+)").unwrap();
     let regex_groups = re.captures(time_arg).unwrap();
@@ -193,7 +196,7 @@ fn display_24_hour_times(time_arg: &str, user_prefs: Vec<&str>) {
     let mut output = AlfredItems { items: Vec::new() };
     for pref in user_prefs {
         let time_to_add = time
-            .with_timezone(time_to_use(pref).1)
+            .with_timezone(time_to_use(&pref).1)
             .format("%H:%M %Z")
             .to_string();
 
@@ -209,12 +212,6 @@ fn display_24_hour_times(time_arg: &str, user_prefs: Vec<&str>) {
 fn main() {
     let all_timezones: [&str; 34] = [
         "ACDT", "ACST", "AEDT", "AEST", "AKST", "AST", "AWST", "CAT", "CET", "CST", "EAT", "EET",
-        "EST", "GMT", "HKT", "HST", "IST", "JST", "KST", "MET", "MSK", "MST", "NST", "NZDT", "PKT",
-        "PST", "SAST", "SST", "UTC", "WAT", "WET", "WIB", "WIT", "WITA",
-    ];
-
-    let user_prefs = vec![
-        "GMT", "ACST", "AEDT", "AEST", "AKST", "AST", "AWST", "CAT", "CET", "CST", "EAT", "EET",
         "EST", "GMT", "HKT", "HST", "IST", "JST", "KST", "MET", "MSK", "MST", "NST", "NZDT", "PKT",
         "PST", "SAST", "SST", "UTC", "WAT", "WET", "WIB", "WIT", "WITA",
     ];
@@ -255,6 +252,13 @@ fn main() {
         std::process::exit(1);
     }
 
+    // load in the user's preferences from json file
+    let user_preferences_file_path = Path::new("src/preferences.json");
+    let user_preferences_file_contents =
+        File::open(user_preferences_file_path).expect("file not found");
+    let user_preferences: Vec<String> =
+        serde_json::from_reader(user_preferences_file_contents).expect("error while reading");
+
     // Define what time formate to use (12|24)
     let hour_format = match is_12_hour_format(&time_arg) {
         true => 12,
@@ -262,9 +266,9 @@ fn main() {
     };
 
     if hour_format == 12 {
-        display_12_hour_times(&time_arg, user_prefs);
+        display_12_hour_times(&time_arg, user_preferences);
     } else {
-        display_24_hour_times(&time_arg, user_prefs);
+        display_24_hour_times(&time_arg, user_preferences);
     }
 
     std::process::exit(0);
