@@ -35,17 +35,29 @@ struct AlfredItems {
     items: Vec<AlfredItem>,
 }
 
+/**
+ * Check if the given string is a valid 12 hour date
+ * e.g. "10:00am GMT"
+ */
 fn is_12_hour_format(time_str: &str) -> bool {
     let re = Regex::new(r"(0?[0-9]|1[0-9]|2[0-3]):([0-5][0-9])+(am|pm)+\s([a-zA-Z]+)").unwrap();
     return re.is_match(time_str);
 }
 
+/**
+ * Check if the given string is a valid 24 hour date
+ * e.g. "12:00 GMT"
+ */
 fn is_24_hour_format(time_str: &str) -> bool {
     let re = Regex::new(r"(0?[0-9]|1[0-9]|2[0-3]):([0-5][0-9])+\s([a-zA-Z]+)").unwrap();
     return re.is_match(time_str);
 }
 
-fn time_to_use(timezone: &str) -> (bool, &chrono_tz::Tz) {
+/**
+ * Returns chrono time object and bool for the given timezone as a tuple
+ * @returns (bool, chrono time object)
+ */
+fn get_time_object_from_timezone(timezone: &str) -> (bool, &chrono_tz::Tz) {
     return match timezone.to_uppercase().as_str() {
         "ACDT" => (true, &chrono_tz::Australia::Adelaide),
         "ACST" => (true, &chrono_tz::Australia::Darwin),
@@ -85,6 +97,9 @@ fn time_to_use(timezone: &str) -> (bool, &chrono_tz::Tz) {
     };
 }
 
+/**
+ * Prints all the available timezones
+ */
 fn list_all_timezones(all_timezones: [&str; 34]) {
     let mut output = AlfredItems { items: Vec::new() };
 
@@ -100,6 +115,9 @@ fn list_all_timezones(all_timezones: [&str; 34]) {
     println!("{}", payload);
 }
 
+/**
+ * Prints submitted time in the timezones specified in preferences.json using in 12 hour format
+ */
 fn display_12_hour_times(time_arg: &str, user_prefs: Vec<String>) {
     let current_time = Utc::now();
     let re = Regex::new(r"(0?[0-9]|1[0-9]|2[0-3]):([0-5][0-9])+(am|pm)+\s([a-zA-Z]+)").unwrap();
@@ -110,7 +128,7 @@ fn display_12_hour_times(time_arg: &str, user_prefs: Vec<String>) {
     let _meridian = regex_groups.get(3).map_or("", |m| m.as_str());
     let submitted_timezone = regex_groups.get(4).map_or("", |m| m.as_str());
 
-    let timezone_to_use = time_to_use(submitted_timezone);
+    let timezone_to_use = get_time_object_from_timezone(submitted_timezone);
 
     if timezone_to_use.0 == false {
         println!(
@@ -142,7 +160,7 @@ fn display_12_hour_times(time_arg: &str, user_prefs: Vec<String>) {
     let mut output = AlfredItems { items: Vec::new() };
     for pref in user_prefs {
         let time_to_add = time
-            .with_timezone(time_to_use(&pref).1)
+            .with_timezone(get_time_object_from_timezone(&pref).1)
             .format("%l:%M%P %Z")
             .to_string();
 
@@ -155,6 +173,9 @@ fn display_12_hour_times(time_arg: &str, user_prefs: Vec<String>) {
     println!("{}", serde_json::to_string(&output).unwrap());
 }
 
+/**
+ * Prints submitted time in the timezones specified in preferences.json using in 24 hour format
+ */
 fn display_24_hour_times(time_arg: &str, user_prefs: Vec<String>) {
     let current_time = Utc::now();
     let re = Regex::new(r"(0?[0-9]|1[0-9]|2[0-3]):([0-5][0-9])+\s([a-zA-Z]+)").unwrap();
@@ -164,7 +185,7 @@ fn display_24_hour_times(time_arg: &str, user_prefs: Vec<String>) {
     let minute = regex_groups.get(2).map_or("", |m| m.as_str());
     let submitted_timezone = regex_groups.get(3).map_or("", |m| m.as_str());
 
-    let timezone_to_use = time_to_use(submitted_timezone);
+    let timezone_to_use = get_time_object_from_timezone(submitted_timezone);
 
     if timezone_to_use.0 == false {
         println!(
@@ -196,7 +217,7 @@ fn display_24_hour_times(time_arg: &str, user_prefs: Vec<String>) {
     let mut output = AlfredItems { items: Vec::new() };
     for pref in user_prefs {
         let time_to_add = time
-            .with_timezone(time_to_use(&pref).1)
+            .with_timezone(get_time_object_from_timezone(&pref).1)
             .format("%H:%M %Z")
             .to_string();
 
@@ -209,6 +230,9 @@ fn display_24_hour_times(time_arg: &str, user_prefs: Vec<String>) {
     println!("{}", serde_json::to_string(&output).unwrap());
 }
 
+/**
+ * Main function
+ */
 fn main() {
     let all_timezones: [&str; 34] = [
         "ACDT", "ACST", "AEDT", "AEST", "AKST", "AST", "AWST", "CAT", "CET", "CST", "EAT", "EET",
@@ -217,7 +241,7 @@ fn main() {
     ];
 
     // If time arg is missing or empty, exit
-    if env::args().len() != 2 {
+    if env::args().len() < 2 {
         println!(
             "{}",
             json!({
@@ -230,12 +254,21 @@ fn main() {
             })
         );
         std::process::exit(1);
-    } else if env::args().nth(1).unwrap() == "list" {
+    }
+    // if arg is "list" or "ls", print all timezones
+    else if env::args().nth(1).unwrap() == "list" || env::args().nth(1).unwrap() == "ls" {
         list_all_timezones(all_timezones);
         std::process::exit(1);
     }
 
+    // Get the submitted time argument
     let time_arg = env::args().nth(1).unwrap();
+
+    // Are we running in alfred
+    // let running_in_alfred = match env::var("alfred_version") {
+    //     Ok(_) => true,
+    //     Err(_) => false,
+    // };
 
     if !is_12_hour_format(&time_arg) && !is_24_hour_format(&time_arg) {
         println!(
@@ -253,23 +286,17 @@ fn main() {
     }
 
     // load in the user's preferences from json file
-    let user_preferences_file_path = Path::new("src/preferences.json");
+    let user_preferences_file_path = Path::new("preferences.json");
     let user_preferences_file_contents =
         File::open(user_preferences_file_path).expect("file not found");
     let user_preferences: Vec<String> =
         serde_json::from_reader(user_preferences_file_contents).expect("error while reading");
 
-    // Define what time formate to use (12|24)
-    let hour_format = match is_12_hour_format(&time_arg) {
-        true => 12,
-        false => 24,
+    // Show times depending on the format of the submitted time
+    match is_12_hour_format(&time_arg) {
+        true => display_12_hour_times(&time_arg, user_preferences),
+        false => display_24_hour_times(&time_arg, user_preferences),
     };
-
-    if hour_format == 12 {
-        display_12_hour_times(&time_arg, user_preferences);
-    } else {
-        display_24_hour_times(&time_arg, user_preferences);
-    }
 
     std::process::exit(0);
 }
