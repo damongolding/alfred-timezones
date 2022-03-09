@@ -24,6 +24,7 @@ use chrono_tz::US::Pacific;
 #[derive(Serialize, Deserialize, Debug)]
 struct AlfredItem {
     title: String,
+    arg: String,
 }
 #[derive(Serialize, Deserialize, Debug)]
 struct AlfredItemWithSubtitle {
@@ -106,6 +107,7 @@ fn list_all_timezones(all_timezones: [&str; 34]) {
     for timezone in all_timezones.iter() {
         let item = AlfredItem {
             title: timezone.to_string(),
+            arg: timezone.to_string(),
         };
         output.items.push(item);
     }
@@ -166,6 +168,7 @@ fn display_12_hour_times(time_arg: &str, user_prefs: Vec<String>) {
 
         let alfred_item = AlfredItem {
             title: time_to_add.trim().to_string(),
+            arg: time_to_add.trim().to_string(),
         };
         output.items.push(alfred_item);
     }
@@ -223,6 +226,7 @@ fn display_24_hour_times(time_arg: &str, user_prefs: Vec<String>) {
 
         let alfred_item = AlfredItem {
             title: time_to_add.trim().to_string(),
+            arg: time_to_add.trim().to_string(),
         };
         output.items.push(alfred_item);
     }
